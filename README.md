@@ -28,10 +28,7 @@ O workspace contém a seguinte estrutura:
     │       └── properties
     └── test
         ├── java
-        │   ├── pageobjects
-        │   ├── tasks
-        │   ├── testcases
-        │   └── validations
+        │   └── testcases
         └── resources
             └── properties
 ```
