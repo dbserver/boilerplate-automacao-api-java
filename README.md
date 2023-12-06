@@ -18,32 +18,45 @@ O workspace contém a seguinte estrutura:
 
 ```shell
 .
-├── gradle
-└── src
-    ├── main
-    │   ├── java
-    │   │   ├── app
-    │   │   └── framework
-    │   └── resources
-    │       └── properties
-    └── test
-        ├── java
-        │   └── testcases
-        └── resources
-            └── properties
+├── Capkcfjm_configuracao
+│   └── gradle
+└── Capuaajm_TestesAPIAutomatizados
+    ├── relatorios_testes
+    │   └── link
+    └── testes
+        └── functionalTest
+            └── pgm
+                └── bergs
+                    └── Cap
+                        └── Capuaajm
+                            ├── main
+                            │   ├── java
+                            │   │   ├── app
+                            │   │   └── framework
+                            │   │       ├── browser
+                            │   │       └── utils
+                            │   │           └── simplereportbuilder
+                            │   └── resources
+                            │       ├── app
+                            │       ├── properties
+                            │       └── simplereportbuilder
+                            └── test
+                                ├── java
+                                │   └── testcases
+                                └── resources
+                                    └── properties
 ```
 
-- `gradle` - Local da distribuição Gradle em utilização no projeto (Gradle Wrapper)
+- `Capkcfjm_configuracao` - 
+  - `gradle` - Local da distribuição Gradle em utilização no projeto (Gradle Wrapper)
 - `src` - Local dos arquivos de código fonte da codebase
   - `main` - Local que centraliza a parte da codebase a ser executada em formato de aplicação convencional (Java ou outras)
-    - `java/app` - Local do web server que provê uma aplicação web + API de exemplo (cujos arquivos HTML, JavaScript, CSS e API JSON estão em `src/main/resources/app`)
+    - `java/app` - Local do web server que provê uma aplicação web de exemplo (cujos arquivos HTML, JavaScript e CSS estão em `src/main/resources/app`)
     - `java/framework` - Local da parte base do framework para automação de testes
-    - `resources` - Local de arquivos utilitários (ex.: arquivos da aplicação web + API de exemplo, arquivos de dados)
-      - `properties` - Local de arquivos de propriedades para a aplicação
+    - `resources` - Local de arquivos utilitários (ex.: arquivos da aplicação web de exemplo, arquivos de dados)
   - `test` - Local que centraliza a parte da codebase a ser executada em formato de testes (Java ou outras, via frameworks como por exemplo JUnit)
-    - `java/testcases` - Local complementar ao framework para automação de testes que possui as classes que representam os casos de teste de fato
+    - `java/testcases` - Local complementar ao framework para automação de testes que possui as classes que representam os casos de teste de fato, através do uso em conjunto de `pageobjects`, `tasks` e `validations`
     - `resources` - Local de arquivos utilitários para os testes (ex.: arquivos de dados, output padrão de relatórios de execução de testes)
-      - `properties` - Local de arquivos de propriedades para os testes
 
 > [!NOTE]
 > As pastas intermediárias `java` contidas em `main` e `test` tem propósito de centralizar os arquivos Java. Essa convenção ajuda na organização do código e é flexível para suportar outras linguagens (Gradle suporta ambientes multi-linguagem). Se houvessem também arquivos em uma linguagem diferente, como por exemplo Kotlin, também poderia haver uma pasta correspondente (ex.: `kotlin`).
