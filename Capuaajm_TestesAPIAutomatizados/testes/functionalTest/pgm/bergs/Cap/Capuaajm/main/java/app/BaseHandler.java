@@ -6,7 +6,7 @@ import java.io.IOException;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 
-import framework.utils.FileOperations;
+import bergs.Cap.Capuaajm.main.java.framework.utils.FileOperations;
 
 public abstract class BaseHandler implements HttpHandler {
     protected static final String DiretorioResourcesApp = FileOperations.DiretorioResourcesAplicacao

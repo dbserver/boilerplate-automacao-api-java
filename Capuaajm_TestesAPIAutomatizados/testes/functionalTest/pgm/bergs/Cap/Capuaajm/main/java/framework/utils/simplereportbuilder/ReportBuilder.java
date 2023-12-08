@@ -9,7 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.UUID;
 
-import framework.utils.FileOperations;
+import bergs.Cap.Capuaajm.main.java.framework.utils.FileOperations;
 
 public class ReportBuilder {
     private static final String DiretorioTemplate = FileOperations.DiretorioResourcesAplicacao

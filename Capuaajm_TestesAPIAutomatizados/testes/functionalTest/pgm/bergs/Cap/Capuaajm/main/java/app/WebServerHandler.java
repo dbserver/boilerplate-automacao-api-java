@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 
-import framework.utils.FileOperations;
+import bergs.Cap.Capuaajm.main.java.framework.utils.FileOperations;
 
 public class WebServerHandler implements HttpHandler {
     private static final String DiretorioResourcesApp = FileOperations.DiretorioResourcesAplicacao
