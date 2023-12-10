@@ -28,7 +28,6 @@ dependencies {
     implementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
     
     // Use Rest Assured for REST API test automations
-    // implementation 'io.rest-assured:rest-assured:4.3.3'
     implementation 'io.rest-assured:rest-assured:5.3.0'
 
     // Use JSON Path for extra API JSON response handling
